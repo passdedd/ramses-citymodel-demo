@@ -16,7 +16,7 @@ set(ramses-sdk_ENABLE_DLT OFF CACHE BOOL "")
 set(ramses-sdk_INSTALL_STATIC_LIBS OFF CACHE BOOL "")
 set(ramses-sdk_utils OFF CACHE BOOL "")
 set(ramses-sdk_external_wayland-ivi-example-client OFF CACHE BOOL "")
-
+set(CMAKE_CXX_FLAGS "-Wno-deprecated-copy")
 add_subdirectory(ramses)
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
